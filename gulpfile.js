@@ -3,23 +3,29 @@ const plumber = require('gulp-plumber');
 const sourcemap = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
+// @ts-ignore
 const autoprefixer = require('autoprefixer');
 const server = require('browser-sync').create();
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
+// @ts-ignore
 const webp = require('gulp-webp');
+// @ts-ignore
 const svgstore = require('gulp-svgstore');
 const del = require('del');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
+// @ts-ignore
 const gcmq = require('gulp-group-css-media-queries');
 
 const css = () => {
   return gulp.src('source/sass/style.scss')
       .pipe(plumber())
       .pipe(sourcemap.init())
+      // @ts-ignore
       .pipe(sass())
+      // @ts-ignore
       .pipe(postcss([autoprefixer({
         grid: true,
       })]))
@@ -34,6 +40,7 @@ const css = () => {
 
 const js = () => {
   return gulp.src(['source/js/main.js'])
+      // @ts-ignore
       .pipe(webpackStream(webpackConfig))
       .pipe(gulp.dest('build/js'))
 };
@@ -43,8 +50,11 @@ const svgo = () => {
       .pipe(imagemin([
         imagemin.svgo({
             plugins: [
+              // @ts-ignore
               {removeViewBox: false},
+              // @ts-ignore
               {removeRasterImages: true},
+              // @ts-ignore
               {removeUselessStrokeAndFill: false},
             ]
           }),
@@ -53,9 +63,9 @@ const svgo = () => {
 };
 
 const sprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
+  return gulp.src('source/img/icons/*.svg')
       .pipe(svgstore({inlineSvg: true}))
-      .pipe(rename('sprite_auto.svg'))
+      .pipe(rename('sprite.svg'))
       .pipe(gulp.dest('build/img'));
 };
 
@@ -88,7 +98,6 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
     notify: false,
     open: true,
     cors: true,

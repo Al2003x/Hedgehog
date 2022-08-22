@@ -20,10 +20,14 @@
 
 @import "blocks/btn";
 @import "blocks/modal";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/promo";
+@import "blocks/feature";
+@import "blocks/feature-card";
+@import "blocks/promo-picture";
 
 // ---------------------------------
-
-// ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
 // ❗ обязательно используйте @media для отключения ховеров на тач устройствах
 // но не используйте для текстовых полей ( input, textarea )

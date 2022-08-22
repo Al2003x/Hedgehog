@@ -1,0 +1,27 @@
+.promo-picture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img {
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, #ABABAB 0%, rgba(237, 237, 237, 0) 100%);
+
+    &-rotate {
+      width: 550px;
+      height: 412px;
+      transform: rotate(-9.43deg);
+      left: -200px;
+      bottom: -100px;
+    }
+
+    &-hed {
+      width: 511px;
+      height: 331px;
+      transform: rotate(0.55deg);
+      right: -200px;
+      bottom: -53px;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.bg-fon {
+  padding: 35px 0 485px;
+  background-image: url(./../../img/bg-fon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .container {
+  display: flex;
+}
+
+.header {
+
+  &-logo {
+    margin-right: 574px;
+    width: 120px;
+    height: 56px;
+
+    &__svg {
+      width: 120px;
+      height: 56px;
+    }
+  }
+
+  &-nav {
+    margin-right: 144px;
+    padding-top: 32px;
+  }
+
+  &-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    max-width: 285px;
+
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 69px;
+      height: 69px;
+      background: linear-gradient(1.36deg, #b0d3ce 12.29%, #ffedce 83.89%);
+      box-shadow: -4px -4px 20px #ffffff, 4px 4px 20px #cfd7d3;
+      border-radius: 50%;
+
+      &-svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    &__link {
+      margin-left: 16px;
+      font-family: $ff-RalewayRegular;
+      font-size: 22px;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: $color-bluestone;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-basket {
+    width: 36px;
+    margin-left: auto;
+    padding-top: 26px;
+
+    &__svg {
+      width: 36px;
+      height: 33px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.header-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: 85px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-triangle {
+      position: relative;
+      padding-left: 18px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-image: url("./../../img/triangle.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $color-bluestone;
+
+    &:hover {
+      color: $color-silver;
+    }
+
+    &-active {
+      border-bottom: 1px solid $color-bluestone;
+    }
+  }
+}

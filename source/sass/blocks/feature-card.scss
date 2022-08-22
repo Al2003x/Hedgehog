@@ -1,0 +1,71 @@
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 191px;
+  margin-right: 155px;
+
+  &:nth-child(odd) {
+    padding-top: 30px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__img {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+
+    &-almond {
+      background-color: $color-almond;
+    }
+
+    &-applegreen {
+      background-color: $color-applegreen;
+    }
+
+    &-gumbo {
+      background-color: $color-gumbo;
+    }
+
+    &-hed {
+      width: 72px;
+      height: 72px;
+    }
+
+    &-solid {
+      width: 46px;
+      height: 46px;
+    }
+
+    &-heart {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-family: $ff-CormorantInfantBold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $color-bluestone;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: $ff-RalewayRegular;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-bluestone;
+  }
+}
