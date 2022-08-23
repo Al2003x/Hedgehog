@@ -1,0 +1,172 @@
+.item {
+
+  &__discount {
+    position: absolute;
+    padding: 6px 7px;
+    top: -7px;
+    left: 62px;
+    width: 68px;
+    height: 36px;
+    font-family: $ff-RalewayBold;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    background-color: $color-bluestone;
+    color: $color-default-white;
+    text-align: center;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 19px;
+    margin-left: 405px;
+    width: 220px;
+
+    &__picture {
+      margin-bottom: 7px;
+      width: 37px;
+      height: 37px;
+
+      &-img {
+        width: 37px;
+        height: 37px;
+      }
+    }
+
+    &__list {
+      position: relative;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 29px;
+      background-color: $color-bluestone;
+      z-index: 10;
+
+      &.visibility {
+        display: flex;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: -6px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid $color-bluestone;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-right: 29px;
+      font-family: $ff-RalewayRegular;
+      font-size: 14px;
+      line-height: 22px;
+      text-transform: lowercase;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: $color-default-white;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__img {
+      margin-right: 4px;
+      stroke: $color-default-white;
+    }
+
+    &__img-solid {
+      width: 26px;
+      height: 26px;
+    }
+
+    &__img-heart {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-content {
+    max-width: 210px;
+    margin-left: 59px;
+  }
+
+  &__name {
+    max-width: 204px;
+    margin-bottom: 17px;
+    font-family: $ff-CormorantInfantBold;
+    font-size: 40px;
+    line-height: 48px;
+    color: $color-bluestone;
+  }
+
+  &__desc {
+    max-width: 182px;
+    margin-bottom: 7px;
+    font-family: $ff-RalewayRegular;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-default-black;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-old {
+      font-size: 20px;
+      line-height: 24px;
+      text-decoration: line-through;
+      color: $color-through;
+    }
+
+    &-new {
+      font-size: 40px;
+      line-height: 48px;
+      color: $color-bluestone;
+    }
+  }
+
+  &-picture {
+    margin-top: 45px;
+
+    &__img {
+      width: 363px;
+      height: 265px;
+
+      &--maks {
+        transform: rotate(-1.96deg);
+      }
+    }
+  }
+
+  &__plus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    text-align: center;
+
+    &-img {
+      width: 27px;
+      height: 27px;
+    }
+  }
+}

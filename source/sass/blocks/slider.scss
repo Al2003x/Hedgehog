@@ -1,0 +1,45 @@
+.slider {
+
+  &__container {
+    width: 1185px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    width: 2452px;
+    height: 410px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 43px;
+    width: 570px;
+    height: 397px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 40px #f1f1f1;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 70px solid $color-default-white;
+      border-left: 70px solid transparent;
+    }
+  }
+
+  &__item-almond {
+    background-color: $color-almond;
+  }
+
+  &__item-apple {
+    background-color: $color-applegreen;
+  }
+}

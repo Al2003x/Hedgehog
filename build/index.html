@@ -1,103 +1,295 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Сайт о ёжиках">
-    <title>Hedgehog</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="bg-fon">
-      <header class="header">
-        <div class="container">
-          <div class="header-logo">
-            <svg class="header-logo__svg">
-              <use xlink:href="img/sprite.svg#Logo"></use>
-            </svg></use>
-          </div>
-          <nav class="header-nav">
-            <ul class="header-nav__list">
-              <li class="header-nav__item header-nav__item-triangle">
-                <a href="#" class="header-nav__link header-nav__link-active">Каталог</a>
-              </li>
-              <li class="header-nav__item">
-                <a href="#" class="header-nav__link">о нас</a>
-              </li>
-              <li class="header-nav__item">
-                <a href="#" class="header-nav__link">контакты</a>
-              </li>
-              <li class="header-nav__item">
-                <a href="#" class="header-nav__link">галерея</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-phone">
-            <div class="header-phone__img">
-              <svg class="header-phone__img-svg">
-                <use xlink:href="img/sprite.svg#phone"></use>
-              </svg>
-            </div>
-            <a href="+7 (965) 569-89-98" class="header-phone__link">+7 (965) 569-89-98</a>
-          </div>
-          <div class="header-basket">
-            <svg class="header-basket__svg">
-              <use xlink:href="img/sprite.svg#basket"></use>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Сайт о ёжиках">
+  <title>Hedgehog</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="bg-fon">
+    <header class="header">
+      <div class="container">
+        <div class="header-logo">
+          <svg class="header-logo__svg">
+            <use xlink:href="img/sprite.svg#Logo"></use>
+          </svg></use>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item header-nav__item-triangle">
+              <a href="#" class="header-nav__link header-nav__link-active">Каталог</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">о нас</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">контакты</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">галерея</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-phone">
+          <div class="header-phone__img">
+            <svg class="header-phone__img-svg">
+              <use xlink:href="img/sprite.svg#phone"></use>
             </svg>
           </div>
+          <a href="+7 (965) 569-89-98" class="header-phone__link">+7 (965) 569-89-98</a>
         </div>
-      </header>
-        <div class="promo">
-          <div class="promo-text">
-            <h1 class="promo__title">
-              <svg class="promo__title-svg">
-                <use xlink:href="img/sprite.svg#hedgehog"></use>
+        <div class="header-basket">
+          <svg class="header-basket__svg">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <div class="promo">
+      <div class="promo-text">
+        <h1 class="promo__title">
+          <svg class="promo__title-svg">
+            <use xlink:href="img/sprite.svg#hedgehog"></use>
+          </svg>
+        </h1>
+        <h2 class="promo__desc">тоже любят молоко</h2>
+        <p class="promo__subdesc">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу
+          мебель.</p>
+      </div>
+      <button class="btn btn__big">Купить ёжика</button>
+      <div class="promo-feature feature">
+        <div class="container">
+          <div class="feature-card">
+            <div class="feature-card__img feature-card__img-almond">
+              <svg class="feature-card__img-hed">
+                <use xlink:href="img/sprite.svg#openmoji_hedgehog"></use>
               </svg>
-            </h1>
-            <h2 class="promo__desc">тоже любят молоко</h2>
-            <p class="promo__subdesc">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+            </div>
+            <h3 class="feature-card__title">разведение ежиков</h3>
+            <p class="feature-card__text">Собственная ферма, уход и содержание</p>
           </div>
-          <button class="btn btn__big">Купить ёжика</button>
-          <div class="promo-feature feature">
-            <div class="container">
-              <div class="feature-card">
-                <div class="feature-card__img feature-card__img-almond">
-                  <svg class="feature-card__img-hed">
-                    <use xlink:href="img/sprite.svg#openmoji_hedgehog"></use>
+          <div class="feature-card">
+            <div class="feature-card__img feature-card__img-applegreen">
+              <svg class="feature-card__img-solid">
+                <use xlink:href="img/sprite.svg#syringe-solid"></use>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">здоровье</h3>
+            <p class="feature-card__text">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__img feature-card__img-gumbo">
+              <svg class="feature-card__img-heart">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">любовь и забота</h3>
+            <p class="feature-card__text">Каждому ежику мы дарим много внимания</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="promo-picture container">
+      <img loading="lazy" src="./img/hed-rotate.png" class="promo-picture__img promo-picture__img-rotate" width="686"
+        height="565" alt="hed-rotate">
+      <img loading="lazy" src="./img/hed.png" class="promo-picture__img promo-picture__img-hed" width="511" height="331"
+        alt="hed">
+    </div>
+  </div>
+  <main>
+    <section class="hedgehog container">
+      <div class="hedgehog__slider slider">
+        <button class="slider__btn slider__btn-left" type="button">
+          <svg class="slider__btn-img">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <div class="slider__container">
+          <div class="slider__wrapper">
+            <div class="slider__item slider__item-almond slider__item-evgen item">
+              <span class="item__discount">-50%</span>
+              <div class="item-info">
+                <div class="item-info__picture">
+                  <svg class="item-info__picture-img">
+                    <use xlink:href="img/sprite.svg#circle-outlined"></use>
                   </svg>
                 </div>
-                <h3 class="feature-card__title">разведение ежиков</h3>
-                <p class="feature-card__text">Собственная ферма, уход и содержание</p>
+                <ul class="item-info__list">
+                  <li class="item-info__item">
+                    <svg class="item-info__img item-info__img-solid">
+                      <use xlink:href="img/sprite.svg#syringe-solid"></use>
+                    </svg>привит
+                  </li>
+                  <li class="item-info__item">
+                    <svg class="item-info__img item-info__img-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>1235
+                  </li>
+                </ul>
               </div>
-              <div class="feature-card">
-                <div class="feature-card__img feature-card__img-applegreen">
-                  <svg class="feature-card__img-solid">
-                    <use xlink:href="img/sprite.svg#syringe-solid"></use>
-                  </svg>
+              <div class="item__wrapper">
+                <div class="item-content">
+                  <h3 class="item__name">Ежик “Евгений”</h3>
+                  <p class="item__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой.
+                    Ручной, любит внимаение</p>
+                  <div class="item__price">
+                    <div class="item__price-old">3000 ₽</div>
+                    <div class="item__price-new">1500 ₽</div>
+                  </div>
                 </div>
-                <h3 class="feature-card__title">здоровье</h3>
-                <p class="feature-card__text">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+                <div class="item-picture">
+                  <img loading="lazy" src="./img/photo-evgen.png" class="item-picture__img" width="363" height="265"
+                    alt="Ёжик Евгений">
+                </div>
               </div>
-              <div class="feature-card">
-                <div class="feature-card__img feature-card__img-gumbo">
-                <svg class="feature-card__img-heart">
-                  <use xlink:href="img/sprite.svg#heart"></use>
+              <div class="item__plus">
+                <svg class="item__plus-img">
+                  <use xlink:href="img/sprite.svg#plus"></use>
                 </svg>
               </div>
-              <h3 class="feature-card__title">любовь и забота</h3>
-              <p class="feature-card__text">Каждому ежику мы дарим много внимания</p>
+            </div>
+            <div class="slider__item slider__item-apple item">
+              <span class="item__discount">-50%</span>
+              <div class="item-info">
+                <div class="item-info__picture">
+                  <svg class="item-info__picture-img">
+                    <use xlink:href="img/sprite.svg#circle-outlined"></use>
+                  </svg>
+                </div>
+                <ul class="item-info__list">
+                  <li class="item-info__item">
+                    <svg class="item-info__img item-info__img-solid">
+                      <use xlink:href="img/sprite.svg#syringe-solid"></use>
+                    </svg>привит
+                  </li>
+                  <li class="item-info__item">
+                    <svg class="item-info__img item-info__img-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>1235
+                  </li>
+                </ul>
+              </div>
+              <div class="item__wrapper">
+                <div class="item-content">
+                  <h3 class="item__name">Ежик “Максим”</h3>
+                  <p class="item__desc">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+                  <div class="item__price">
+                    <div class="item__price-old">5000 ₽</div>
+                    <div class="item__price-new">2500 ₽</div>
+                  </div>
+                </div>
+                <div class="item-picture">
+                  <img loading="lazy" src="./img/photo-maks.png" class="item-picture__img item-picture__img--maks" width="384" height="280"
+                    alt="Ёжик Максим">
+                </div>
+              </div>
+              <div class="item__plus">
+                <svg class="item__plus-img">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="slider__item slider__item-almond item">
+              <span class="item__discount">-50%</span>
+              <div class="item-info">
+                <div class="item-info__picture">
+                  <svg class="item-info__picture-img">
+                    <use xlink:href="img/sprite.svg#circle-outlined"></use>
+                  </svg>
+                </div>
+                <ul class="item-info__list">
+                  <li class="item-info__item">
+                    <svg class="item-info__img item-info__img-solid">
+                      <use xlink:href="img/sprite.svg#syringe-solid"></use>
+                    </svg>привит
+                  </li>
+                  <li class="item-info__item">
+                    <svg class="item-info__img item-info__img-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>1235
+                  </li>
+                </ul>
+              </div>
+              <div class="item__wrapper">
+                <div class="item-content">
+                  <h3 class="item__name">Ежик “Евгений”</h3>
+                  <p class="item__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой.
+                    Ручной, любит внимаение</p>
+                  <div class="item__price">
+                    <div class="item__price-old">3000 ₽</div>
+                    <div class="item__price-new">1500 ₽</div>
+                  </div>
+                </div>
+                <div class="item-picture">
+                    <img loading="lazy" src="./img/photo-evgen.png" class="item-picture__img" width="363" height="265"
+                      alt="Ёжик Евгений">
+                  </div>
+              </div>
+              <div class="item__plus">
+                <svg class="item__plus-img">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="slider__item slider__item-apple item">
+              <span class="item__discount">-50%</span>
+              <div class="item-info">
+                <div class="item-info__picture">
+                  <svg class="item-info__picture-img">
+                    <use xlink:href="img/sprite.svg#circle-outlined"></use>
+                  </svg>
+                </div>
+                <ul class="item-info__list">
+                  <li class="item-info__item">
+                    <svg class="item-info__img item-info__img-solid">
+                      <use xlink:href="img/sprite.svg#syringe-solid"></use>
+                    </svg>привит
+                  </li>
+                  <li class="item-info__item">
+                    <svg class="item-info__img item-info__img-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>1235
+                  </li>
+                </ul>
+              </div>
+              <div class="item__wrapper">
+                <div class="item-content">
+                  <h3 class="item__name">Ежик “Максим”</h3>
+                  <p class="item__desc">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+                  <div class="item__price">
+                    <div class="item__price-old">5000 ₽</div>
+                    <div class="item__price-new">2500 ₽</div>
+                  </div>
+                </div>
+                <div class="item-picture">
+                  <img loading="lazy" src="./img/photo-maks.png" class="item-picture__img" width="384" height="280"
+                    alt="Ёжик Максим">
+                </div>
+              </div>
+              <div class="item__plus">
+                <svg class="item__plus-img">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
               </div>
             </div>
           </div>
         </div>
-        <div class="promo-picture container">
-          <img loading="lazy" src="./img/hed-rotate.png" class="promo-picture__img promo-picture__img-rotate" width="686" height="565" alt="hed-rotate">
-          <img loading="lazy" src="./img/hed.png" class="promo-picture__img promo-picture__img-hed" width="511" height="331" alt="hed">
-        </div>
-        <main></main>
+        <button class="slider__btn slider__btn-right" type="button">
+          <svg class="slider__btn-img">
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
