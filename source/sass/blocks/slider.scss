@@ -1,6 +1,8 @@
 .slider {
+  position: relative;
 
   &__container {
+    position: relative;
     width: 1185px;
     margin: 0 auto;
     overflow: hidden;
@@ -41,5 +43,29 @@
 
   &__item-apple {
     background-color: $color-applegreen;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &-img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &-left {
+      left: 235px;
+    }
+
+    &-right {
+      right: 250px;
+    }
   }
 }

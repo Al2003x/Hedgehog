@@ -28,10 +28,15 @@
       margin-bottom: 7px;
       width: 37px;
       height: 37px;
+      cursor: pointer;
 
       &-img {
         width: 37px;
         height: 37px;
+
+        &:hover {
+          stroke: $color-silver;
+        }
       }
     }
 

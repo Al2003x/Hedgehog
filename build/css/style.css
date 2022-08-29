@@ -1160,7 +1160,12 @@ button,
   bottom: -55px;
 }
 
+.slider {
+  position: relative;
+}
+
 .slider__container {
+  position: relative;
   width: 1185px;
   margin: 0 auto;
   overflow: hidden;
@@ -1210,6 +1215,32 @@ button,
   background-color: #E2F0DF;
 }
 
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider__btn-img {
+  width: 24px;
+  height: 24px;
+}
+
+.slider__btn-left {
+  left: 235px;
+}
+
+.slider__btn-right {
+  right: 250px;
+}
+
 .item__discount {
   position: absolute;
   padding: 6px 7px;
@@ -1247,11 +1278,16 @@ button,
   margin-bottom: 7px;
   width: 37px;
   height: 37px;
+  cursor: pointer;
 }
 
 .item-info__picture-img {
   width: 37px;
   height: 37px;
+}
+
+.item-info__picture-img:hover {
+  stroke: #C4C4C4;
 }
 
 .item-info__list {
