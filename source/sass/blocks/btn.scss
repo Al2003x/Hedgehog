@@ -10,7 +10,7 @@
   background-color: $color-gumbo;
   border: none;
   cursor: pointer;
-  border: 2px solid #70908b;
+  border: 2px solid $color-gumbo;
   border-radius: 61px;
 
   &__big {
@@ -24,12 +24,45 @@
 
   &__white {
     background: #ffffff;
-    border: 2px solid #70908b;
+    border: 2px solid $color-gumbo;
   }
 
   &:hover {
-    background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+    background: linear-gradient(90.14deg, #b0d3ce -2.41%, #ffedce 99.79%);
     color: $color-bluestone;
-    border: none;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+
+    &.btn__application-active {
+      background: $color-gumbo;
+      color: $color-default-white;
+      box-shadow: none;
+    }
+  }
+
+  &__application {
+    margin: 0;
+    margin-right: 14px;
+    background-color: $color-default-white;
+    color: $color-gumbo;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-active {
+      background-color: $color-gumbo;
+      color: $color-default-white;
+    }
+  }
+
+  &__form {
+    position: relative;
+    bottom: -115px;
+    margin: 0 auto;
+    padding: 27px 117px;
+    font-family: $ff-RalewayBold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
   }
 }

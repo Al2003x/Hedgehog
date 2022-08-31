@@ -58,6 +58,10 @@
     &-img {
       width: 24px;
       height: 24px;
+
+      &:hover {
+        stroke: $color-almond;
+      }
     }
 
     &-left {

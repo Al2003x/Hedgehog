@@ -286,6 +286,36 @@
         </button>
       </div>
     </section>
+    <section class="application container">
+      <div class="application__wrapper">
+        <form action="#" class="form-application">
+          <h2 class="application__title">Заполните заявку и мы забронируем для Вас нового друга</h2>
+          <div class="form-application__buttons">
+            <button class="btn btn__application btn__application-active">хочу ёжика для себя</button>
+            <button class="btn btn__application">хочу ёжика для детей</button>
+            <button class="btn btn__application">хочу ёжика для разведения</button>
+          </div>
+          <div class="form-application-radio">
+            <input type="radio" name="quantity" id="1" class="visually-hidden form-application-radio__input" checked>
+            <label class="form-application-radio__label" for="1">Мне нужен 1-2 ёжика</label>
+            <input type="radio" name="quantity" id="2" class="visually-hidden form-application-radio__input">
+            <label class="form-application-radio__label" for="2">Мне нужны 3-4 ёжика</label>
+            <input type="radio" name="quantity" id="3" class="visually-hidden form-application-radio__input">
+            <label class="form-application-radio__label" for="3">Мне нужны 3 и более ёжиков</label>
+            <input type="radio" name="quantity" id="4" class="visually-hidden form-application-radio__input">
+            <label class="form-application-radio__label" for="4">Пока присматриваюсь</label>
+          </div>
+          <div class="form-application-text">
+            <input type="text" name="user-tel" class="form-application-text__input" id="name" placeholder="Ваше имя">
+            <input type="tel" name="user-name" class="form-application-text__input" id="tel" placeholder="Ваш телефон">
+            <input type="email" name="user-email" class="form-application-text__input" id="email" placeholder="Ваш e-mail">
+            <textarea name="textarea" class="form-application-text__textarea" placeholder="Комментарий к заявке"></textarea>
+          </div>
+
+          <button class="btn btn__form">Купить ёжика</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <script src="js/vendor.min.js"></script>
