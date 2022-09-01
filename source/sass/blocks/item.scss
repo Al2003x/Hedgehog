@@ -33,9 +33,10 @@
       &-img {
         width: 37px;
         height: 37px;
+        fill: $color-bluestone;
 
         &:hover {
-          stroke: $color-silver;
+          fill: $color-default-black;
         }
       }
     }

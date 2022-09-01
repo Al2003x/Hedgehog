@@ -1,4 +1,4 @@
-.header-nav {
+.nav {
   &__list {
     display: flex;
     align-items: center;
@@ -45,5 +45,9 @@
     &-active {
       border-bottom: 1px solid $color-bluestone;
     }
+  }
+
+  &-footer__link {
+    color: $color-default-white;
   }
 }

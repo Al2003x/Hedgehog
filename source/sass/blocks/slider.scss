@@ -58,9 +58,10 @@
     &-img {
       width: 24px;
       height: 24px;
+      fill: $color-gumbo;
 
       &:hover {
-        stroke: $color-almond;
+        fill: $color-default-black;
       }
     }
 
